@@ -1,0 +1,320 @@
+﻿
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- SITE TITLE -->
+    <title>Website Wet Cat </title>
+    <!--    phần hiệu ứng đăng nhập-->
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/Content/assets/img/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+</head>
+<body>
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+
+        <!-- START PRELOADER -->
+        <div class="atf-preloader">
+            <div class="atf-status">
+                <div class="atf-status-mes"></div>
+            </div>
+        </div>
+        <!-- END PRELOADER -->
+        <!-- START back-to-top -->
+        <button class="atf-scroll-top atf-back-to-top" data-targets="html">
+            <i class="fa fa-angle-up atf-scrollup-icon"></i>
+        </button>
+        <!-- END back-to-top-->
+        <!-- Start Header Section -->
+        @Html.Partial("_MenuMain");
+        <!-- End Header Section -->
+        <!-- START HOME -->
+        <div class="container body-content">
+            @RenderBody()
+
+        </div>
+
+        <!-- END  HOME DESIGN -->
+        <!-- Special Offer Area -->
+        <div class="atf-special-offer atf-section-padding pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-6 col-12 text-left">
+                        <div class="atf-special-content atf-section-title  mx-auto my-auto">
+                            <h4 class="mb-2">Nhận giảm giá ngay 30%   </h4>
+                            <h2>Khuyến mãi tốt nhất cho bạn</h2>
+                            <p class="pr-lg-5">Chân dài quyến rũ bờ mông quay cong lại có giảm giá ngay </p>
+
+                            <h4 class="mt-5">Hết hạn vào ngày</h4>
+                            @*đếm thời gian*@
+                            <div id="countdown" class="text-center">
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="atf-main-btn mt-5 pb-5 d-lg-block">
+                            <a href="#" class="page-scroll atf-themes-btn">Hàng cao cấp <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div><!--- END COL -->
+
+                    <div class="col-xl-5 col-lg-6 col-12">
+                        <div class="atf-special-img text-center  mx-auto my-auto">
+                            <div class="atf-single-special-img">
+                                <img src="~/Content/assets/img/special.png" width="370" alt="Offer Image" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>	<!--- END COL -->
+                </div><!--- END ROW -->
+            </div><!--- END CONTAINER -->
+        </div> <!-- End Special Offer Area -->
+        <canvas id='canvas' width='1280' height='1400' style="background-image: url(../Content/assets/img/banner/ao-mua.jpg);"></canvas>
+        <!-- START SERVICE SECTION  -->
+        <section id="service" class="atf-service-area atf-section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 feature-col">
+                        <div class="atf-single-service-wrap text-center">
+                            <div class="atf-single-service-wrap">
+                                <div class="atf-services-icon text-center mb-3">
+                                    <i class="fab fa-cc-mastercard"></i>
+                                </div>
+                                <div class="atf-service-content">
+                                    <h3>Thanh toán an toàn</h3>
+                                    <p>Chân dài quyến rũ bờ mông, cong đít là shop giao tới ngay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 feature-col">
+                        <div class="atf-single-service-wrap text-center">
+                            <div class="atf-single-service-wrap">
+                                <div class="atf-services-icon text-center mb-3">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <div class="atf-service-content">
+                                    <h3>Giao hàng miễn phí</h3>
+                                    <p>Chân dài quyến rũ bờ mông, cong đít là shop giao tới ngay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 feature-col">
+                        <div class="atf-single-service-wrap text-center">
+                            <div class="atf-single-service-wrap">
+                                <div class="atf-services-icon text-center mb-3">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                </div>
+                                <div class="atf-service-content">
+                                    <h3>Hỗ trợ  24/7</h3>
+                                    <p>Chân dài quyến rũ bờ mông, cong đít là shop giao tới ngay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 feature-col">
+                        <div class="atf-single-service-wrap text-center">
+                            <div class="atf-single-service-wrap">
+                                <div class="atf-services-icon text-center mb-3">
+                                    <i class="fa fa-sync-alt"></i>
+                                </div>
+                                <div class="atf-service-content">
+                                    <h3>Đổi trả trong 10 ngày</h3>
+                                    <p>Chân dài quyến rũ bờ mông, cong đít là shop giao tới ngay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service-Area End-->
+        <!-- START COMPANY BRAND LOGO  -->
+        <div id="atf-brand-area" class="atf-brand-area atf-section-padding">
+            <div class="atf-brand-overlay">
+                <div class="container">
+                    <div class="atf-slider atf-style2">
+                        <div class="slick-container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="3" data-md-slides="3" data-lg-slides="5" data-add-slides="3">
+                            <div class="slick-wrapper">
+                                <div class="slick-slide-in">
+                                    <div class="atf-brand-active">
+                                        <a href="#"><img src="~/Content/assets/img/partner/1.png" alt="image"></a>
+                                    </div>
+                                </div><!-- .slick-slide-in -->
+
+                                <div class="slick-slide-in">
+                                    <div class="atf-brand-active">
+                                        <a href="#"><img src="~/Content/assets/img/partner/2.png" alt="image"></a>
+                                    </div>
+                                </div><!-- .slick-slide-in -->
+
+                                <div class="slick-slide-in">
+                                    <div class="atf-brand-active">
+                                        <a href="#"><img src="~/Content/assets/img/partner/3.png" alt="image"></a>
+                                    </div>
+                                </div><!-- .slick-slide-in -->
+                                <div class="slick-slide-in">
+                                    <div class="atf-brand-active">
+                                        <a href="#"><img src="~/Content/assets/img/partner/4.png" alt="image"></a>
+                                    </div>
+                                </div><!-- .slick-slide-in -->
+                                <div class="slick-slide-in">
+                                    <div class="atf-brand-active">
+                                        <a href="#"><img src="~/Content/assets/img/partner/5.png" alt="image"></a>
+                                    </div>
+                                </div><!-- .slick-slide-in -->
+
+                                <div class="slick-slide-in">
+                                    <div class="atf-brand-active">
+                                        <a href="#"><img src="~/Content/assets/img/partner/1.png" alt="image"></a>
+                                    </div>
+                                </div><!-- .slick-slide-in -->
+
+                                <div class="slick-slide-in">
+                                    <div class="atf-brand-active">
+                                        <a href="#"><img src="~/Content/assets/img/partner/2.png" alt="image"></a>
+                                    </div>
+                                </div><!-- .slick-slide-in -->
+
+                            </div><!-- .slick-slide-Wrapper -->
+                        </div><!-- .slick-container -->
+
+                        <div class="pagination atf-style1 atf-flex atf-hidden"></div> <!-- If dont need Pagination then add class .atf-hidden -->
+                        <div class="swipe-arrow atf-style1">
+                            <!-- If dont need navigation then add class .atf-hidden -->
+                            <div class="slick-arrow-left"><i class="fa fa-chevron-left"></i></div>
+                            <div class="slick-arrow-right"><i class="fa fa-chevron-right"></i></div>
+                        </div>
+                    </div><!-- .atf-slider -->
+                </div><!-- .container -->
+            </div><!-- END OVERLAY -->
+        </div>
+        <!-- END COMPANY BRAND LOGO -->
+        <!-- START NEWSLETTER -->
+        <section class="atf-newsletter atf-section-padding">
+            <div class="container">
+                <div class="row clearfix justify-content-center">
+                    <div class="col-xl-6 col-lg-6 col-12 text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+                        <div class="atf-mailchamp-headding">
+                            <h2>Đăng ký để nhận thêm nhiều chương trình hấp dẫn</h2>
+                        </div>
+                    </div><!-- END COL -->
+
+                    <div class="col-xl-6 col-lg-6 col-12 text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                        <div class="atf-mailchamp-subscribe">
+                            <form class="form-group" id="mc-form">
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required="required">
+                                <button type="submit" id="subscribe-button" class="btn"><i class="fas fa-envelope"></i></button>
+                                <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+                                <br>
+                                <label class="atf-subscription-label" for="email"></label>
+                            </form>
+                        </div>
+                    </div><!-- END COL -->
+                </div><!-- END ROW -->
+            </div><!-- END CONTAINER -->
+        </section>
+        <!-- END NEWSLETTER -->
+        <!-- FOOTER SECTION START-->
+        <footer class="atf-footer-area atf-pattern-area">
+            <div class="container">
+                <div class="atf-footer-top mt-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 atf-footer-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                            <div class="atf-footer-box">
+                                <h5><a href=""><img class="atf-footer-logo" src="~/Content/assets/img/Cute Cat Icon Logo.jpg" alt="Logo" style="width:50px;height:50px;" /></a></h5>
+                                <ul class="pr-lg-5">
+                                    <li>149 Đường Lý Tuệ, Tân Quý, Tân Phú, Thành phố Hồ Chí Minh</li>
+                                    <li>(+84) 389346227 <br> (+84) 879672891 </li>
+                                    <li>thienfuon@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div><!--- END COL -->
+
+                        <div class="col-lg-2 col-md-6 col-12 atf-footer-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+                            <h5>Đường Dẫn Nhanh</h5>
+                            <ul class="atf-list-menu">
+                                <li> <a href="#"><i class="fas fa-angle-right mr-2"></i>Bắt đầu nhận</a></li>
+                                <li> <a href="#"><i class="fas fa-angle-right mr-2"></i>Các thành viên</a></li>
+                                <li> <a href="#"><i class="fas fa-angle-right mr-2"></i>Về chúng tôi</a></li>
+                                <li> <a href="#"><i class="fas fa-angle-right mr-2"></i>Cần sự giúp đỡ</a></li>
+                                <li> <a href="#"><i class="fas fa-angle-right mr-2"></i>Liên hệ</a></li>
+                            </ul>
+                        </div><!--- END COL -->
+
+                        <div class="col-lg-2 col-md-6 col-12 atf-footer-link wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
+                            <h5>Liên Kết Hỗ Trợ</h5>
+                            <ul class="atf-list-menu">
+                                <li><a href="#"><i class="fas fa-angle-right mr-2"></i>Điều Khoản</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right mr-2"></i>Dịch Vụ</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right mr-2"></i>Chính Sách Bảo Mật</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right mr-2"></i>Giấy Phép</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right mr-2"></i>Tin Tức Của Chúng Tôi</a></li>
+                            </ul>
+                        </div><!--- END COL -->
+
+
+                        <div class="col-lg-4 col-md-6 col-12 atf-footer-link text-left wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
+                            <h5>Liên hệ</h5>
+                            <div class="atf-footer-con">
+                                <p>Bạn đã quan tâm đến với các hình tượng của chúng tôi.</p>
+                            </div>
+                            <h4 class="text-white mt-2">Theo dõi ở</h4>
+                            <div class="atf-footer-social-icon mt-3 text-left">
+                                <a href="#" class="icon"> <i class="fab fa-facebook"></i> </a>
+                                <a href="#" class="icon"> <i class="fab fa-dribbble"></i> </a>
+                                <a href="#" class="icon"> <i class="fab fa-behance"></i> </a>
+                                <a href="#" class="icon"> <i class="fab fa-linkedin"></i> </a>
+                                <a href="#" class="icon"> <i class="fab fa-twitter"></i> </a>
+                            </div>
+                        </div><!--- END COL -->
+                    </div><!--- END ROW -->
+                </div><!--- END SINGLE FOOTER -->
+            </div><!--- END CONTAINER -->
+
+            <div class="atf-footer-boottom mt-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-xl-5 col-12 my-auto text-lg-left wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                            <p>&copy;Được thiết kế  <i class="fa fa-heart ml-1 mr-1"></i> bởi <a href="#">Ngô Hoàng Thiên</a> </p>
+                        </div><!--- END COL -->
+
+                        <div class="col-lg-7 col-xl-7 col-12">
+                            <div class="atf-payment-area text-lg-right my-auto mx-auto">
+                                <ul>
+                                    <li><a href="#"><img src="~/Content/assets/img/payment/1.png" alt="img"></a></li>
+                                    <li><a href="#"><img src="~/Content/assets/img/payment/2.png" alt="img"></a></li>
+                                    <li><a href="#"><img src="~/Content/assets/img/payment/3.png" alt="img"></a></li>
+                                    <li><a href="#"><img src="~/Content/assets/img/payment/1.png" alt="img"></a></li>
+                                    <li><a href="#"><img src="~/Content/assets/img/payment/2.png" alt="img"></a></li>
+                                    <li><a href="#"><img src="~/Content/assets/img/payment/3.png" alt="img"></a></li>
+                                </ul>
+                            </div>
+                        </div><!--- END COL -->
+                    </div><!--- END ROW -->
+                </div>
+            </div>
+            <!-- FOOTER SECTION END-->
+        </footer><!--- END FOOTER -->
+    </div>
+    <!-- PAGE WRAPPER END-->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

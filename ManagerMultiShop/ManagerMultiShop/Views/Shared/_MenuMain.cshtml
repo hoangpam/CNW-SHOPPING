@@ -1,0 +1,67 @@
+﻿<header class="atf-site-header atf-style1 atf-sticky-header">
+    <div class="atf-top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <div class="atf-top-header-in wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                        <ul class="atf-top-header-list">
+                            <li><i class="fas fa-envelope"></i>Email: <a href="#">thienfuon@gmail.com</a></li>
+                            <li><i class="fas fa-phone-volume"></i>Liên hệ với: <a href="#">0389346227 </a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+                <div class="col-lg-4 col-md-4">
+                    <div class="nav-right-part nav-right-part-desktop">
+                        <ul>
+                            <li><a class="search header-search" href="#"><i class="fa fa-search"></i></a></li>
+                            <li>
+                                <a href data-toggle="modal" data-target="#login-modal">
+                                    Đăng nhập
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+        </div><!--- END CONTAINER -->
+    </div><!--- END TOP HEADER -->
+
+    <div class="atf-main-header">
+        <div class="container">
+            <div class="atf-main-header-in">
+                <div class="atf-main-header-left">
+                    <a class="atf-site-branding atf-white-logo " href="#"><img src="~/Content/assets/img/Cute Cat Icon Logo.jpg" alt="Logo" style="width:50px;height:50px;"  ></a>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <ul>
+                        <li><a class="search header-search" href="#"><i class="fa fa-search"></i></a></li>
+                        <li class=""><a class="login-btn" href="#">Đăng nhập</a></li>
+                        <li><a class="shopping-cart-btn" href="#"><i class="fa fa-shopping-cart"></i><span>2</span></a></li>
+                    </ul>
+                </div>
+                <div class="atf-main-header-right">
+                    <div class="atf-nav">
+                        <ul class="atf-nav-list atf-onepage-nav">
+                            <li>
+                                <a href="#home" class="atf-smooth-move">Trang chủ</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#" class="atf-smooth-move">Đăng nhập<i class="fa fa-chevron-down ml-2"></i></a>
+                                @Html.Partial("_MenuMain_Login")
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#" class="atf-smooth-move">Trang<i class="fa fa-chevron-down ml-2"></i></a>
+                                <ul>
+                                    <li><a href="contact.html">Liên hệ với chúng tôi</a></li>
+                                    <li><a href="#">404</a></li>
+                                    <li><a href="blog.html">Mua sắm nhiều sản phẩm</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Hàng cao cấp</a></li>
+                        </ul><!--- END NAV -->
+                    </div>
+                </div><!--- END MAIN HEADER RIGHT -->
+            </div>
+        </div><!--- END CONTAINER -->
+    </div><!--- END MAIN HEADER -->
+</header>
